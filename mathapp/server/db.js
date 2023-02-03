@@ -12,26 +12,19 @@ var con = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database:"mathapp"
+    database: "mathapp"
 });
 
 con.connect(function(err) {
     if (err) throw err;
     console.log("Connected!");
+    var sql = "CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))";
+con.query(sql, function (err, result) {
+    if (err) throw err;
+    console.log("Table created");
 });
-//check error
-// db.connect(function(err) {
-//     if(err) {
-//         return console.error('error' + err.message);
-//     }
-//     console.log('Connect to mysql')
-//     sql="insert into exercise (img,mark) values('next.png','มากกว่า')";
-//     con.query(sql, function (err, result) {
-//         if (err) throw err;
-//         console.log("insert complete"); 
-//     }); 
 
-// })
+})
 
 
 module.exports = mysql;
