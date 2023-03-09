@@ -1,6 +1,6 @@
 import './ExploreContainer.css';
 import { IonImg } from '@ionic/react';
-import { IonButton, IonText } from '@ionic/react';
+import { IonButton, IonText, IonTitle} from '@ionic/react';
 import Teacher from "../assets/images/teacher.png"
 interface ContainerProps { }
 const ExploreContainer: React.FC<ContainerProps> = () => {
@@ -10,14 +10,12 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
       {/* <IonImg src='../assets/images/teacher.png'></IonImg> */}
       
       <img src={ Teacher } alt=""  />  
-    
       <IonButton  fill="clear" href='/menu' size="large" color="light">
-        <IonText>
-          <h1>MATH</h1>             
+        <IonText class="text-center">
+          MATH             
         </IonText>
-        </IonButton>
+      </IonButton>
     </div>
-    
   
   );
 };

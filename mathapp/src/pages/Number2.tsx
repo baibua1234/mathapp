@@ -1,13 +1,13 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar ,IonButton ,IonCardContent , IonCard , IonCardHeader,IonCardTitle} from '@ionic/react';
-import ttt from '../assets/images/ttt.png'
+import cat from '../assets/images/cat.png'
 import five from '../assets/images/five.png'
-import three from '../assets/images/three.png'
-import two from '../assets/images/two.png'
+import four from '../assets/images/four.png'
+import one from '../assets/images/one.png'
 import back from '../assets/images/back.png'
 import next from '../assets/images/next.png'
 import backarrow from '../assets/images/backarrow.png'
-import "./Number.css"
-const Number: React.FC = () => {
+import "./Number2.css"
+const Number2: React.FC = () => {
     return (
         <IonPage>
              <IonCard style={{backgroundColor: '#DDBD69'}}>
@@ -17,26 +17,26 @@ const Number: React.FC = () => {
                 </div>
 
                 <div className='ion-text-center'>
-                    <p className='quiz'>1.มีรูปภาพเต่าทั้งหมดกี่ตัว</p>
+                    <p className='quiz'>2.มีรูปภาพแมวทั้งหมดกี่ตัว</p>
                 </div>
                 
                 <div className='ion-text-center'>
-                    <img className='img-quiz' src={ttt} alt="" />       
+                    <img className='img-quiz' src={cat} alt="" />    
                 </div>
-                
+
                 <div className='ion-text-center'> 
                     <p className='quiz select-answer'>เลือกคำตอบ</p>
                 </div>
                 
                 <div className='wrap'>
                     <div className='bg-quiz'>
+                    <img className='img-answer' src={four} alt="" />       
+                </div>
+                <div className='bg-quiz'>
                     <img className='img-answer' src={five} alt="" />       
                 </div>
                 <div className='bg-quiz'>
-                    <img className='img-answer' src={three} alt="" />       
-                </div>
-                <div className='bg-quiz'>
-                    <img className='img-answer' src={two} alt="" />       
+                    <img className='img-answer' src={one} alt="" />       
                 </div>
 
                 </div>
@@ -60,4 +60,4 @@ const Number: React.FC = () => {
     );
 };
 
-export default Number;
+export default Number2;

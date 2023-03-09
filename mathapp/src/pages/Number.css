@@ -1,9 +1,9 @@
 .md body {
-    --ion-background-color: #cbb0b2;
+    --ion-background-color: #684A61;
 }
 
 .card-footer {
-    backgroundColor: #B4A48E;
+    backgroundColor: #684A61;
     border-radius: 30px;
 }
 

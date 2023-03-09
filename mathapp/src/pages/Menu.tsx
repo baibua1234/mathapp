@@ -3,30 +3,30 @@ import "./Menu.css"
 import exercise from '../assets/images/exercise.png'
 import video from '../assets/images/video.png'
 import game from '../assets/images/game.png'
-import menu from '../assets/images/shapes.png'
+import shapes from '../assets/images/shapes.png'
 const Menu: React.FC = () => {
     return (
         
         <IonPage>
             <IonHeader>
-                <IonToolbar>
+                <IonToolbar style={{backgroundColor: '#DDBD69'}}>
                     
                 <IonText>
                     <h1>MENU</h1> 
-                    <img src={menu} alt=""  />             
+                    <img src={shapes} alt="" width={"80"} height={"80"}  />             
                  </IonText>
             
                 </IonToolbar>
             </IonHeader>
             
             {/* item1 */}
-            <IonCard className='card-data' href='/video' style={{backgroundColor: '#B4A48E'}}>
+            <IonCard className='card-data' href='/video' style={{backgroundColor: '#DDBD69'}}>
                 <IonCardHeader>
                     <IonCardTitle>
                         <div className='ion-text-center'>
                      <IonText>
                         <h4 color="warning">วีดีโอสื่อการสอน</h4> 
-                      <img src={video} alt=""  />             
+                        <img src={video} alt="" width={"80"} height={"80"} />             
                     </IonText>                          
                         </div>
                     </IonCardTitle>
@@ -34,13 +34,13 @@ const Menu: React.FC = () => {
             </IonCard>
 
             {/* item2 */}
-            <IonCard href='/exercise' style={{backgroundColor: '#B4A48E'}}>
+            <IonCard href='/exercise' style={{backgroundColor: '#DDBD69'}}>
                 <IonCardHeader>
                     <IonCardTitle>
                         <div className='ion-text-center'>
                      <IonText>
-                        <h4 color="warning">แบบฝึกหัด</h4> 
-                      <img src={exercise} alt=""  />             
+                        <h3 color="warning">แบบฝึกหัด</h3> 
+                      <img src={exercise} alt="" width={"80"} height={"80"}  />              
                     </IonText>                          
                         </div>
                     </IonCardTitle>
@@ -48,13 +48,13 @@ const Menu: React.FC = () => {
             </IonCard>
 
             {/* item3 */}
-            <IonCard href='/game' style={{backgroundColor: '#B4A48E'}}>
+            <IonCard href='/game' style={{backgroundColor: '#DDBD69'}}>
                 <IonCardHeader>
                     <IonCardTitle>
                         <div className='ion-text-center'>
                      <IonText>
-                        <h4 color="warning">เกม</h4> 
-                      <img src={game} alt=""  />             
+                        <h2 color="warning">เกม</h2> 
+                      <img src={game} alt="" width={"80"} height={"80"}   />             
                     </IonText>                          
                         </div>
                     </IonCardTitle>
@@ -66,3 +66,4 @@ const Menu: React.FC = () => {
 };
 
 export default Menu;
+

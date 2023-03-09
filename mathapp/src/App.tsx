@@ -3,11 +3,16 @@ import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 import Menu from './pages/Menu'; 
-import Video from './pages/video';
+import Video from './pages/Video';
 import Exercise from './pages/Exercise';
+import Exercisetwo from './pages/Exercisetwo';
 import Game from './pages/Game';
 import Number from './pages/Number';
-import plusminus from './pages/Plusminus';
+import Number2 from './pages/Number2';
+import NumberPM from './pages/NumberPM';
+import Gameimage from './pages/Gameimage';
+import Gameopenimage from './pages/Gameopenimage';
+import Matchnumber from './pages/Matchnumber';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -54,6 +59,11 @@ const App: React.FC = () => (
         <Route exact path='/exercise'>
             <Exercise />
             <Redirect to="/exercise" />
+        </Route>
+
+        <Route exact path='/exercisetwo'>
+            <Exercisetwo />
+            <Redirect to="/exercisetwo" />
         </Route>  
 
         <Route exact path='/game'>
@@ -64,7 +74,36 @@ const App: React.FC = () => (
         <Route exact path='/number'>
             <Number />
             <Redirect to="/number" />
+        </Route>
+
+        <Route exact path='/number2'>
+            <Number2 />
+            <Redirect to="/number2" />
+        </Route>
+
+        <Route exact path='/numberpm'>
+            <NumberPM />
+            <Redirect to="/numberpm" />
         </Route> 
+
+        <Route exact path='/gameimage'>
+            <Gameimage />
+            <Redirect to="/gameimage" />
+        </Route> 
+
+        <Route exact path='/gameopenimage'>
+            <Gameopenimage />
+            <Redirect to="/gameopenimage" />
+        </Route> 
+
+        <Route exact path='/matchnumber'>
+            <Matchnumber />
+            <Redirect to="/matchnumber" />
+        </Route> 
+
+
+
+
 
 
       </IonRouterOutlet>
