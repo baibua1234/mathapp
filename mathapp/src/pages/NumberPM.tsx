@@ -1,4 +1,5 @@
 import { IonContent, IonCard, IonCardHeader, IonCardTitle, IonHeader, IonPage, IonTitle, IonToolbar ,IonButton, } from '@ionic/react';
+import pm1 from '../assets/images/pm1.png'
 
 const NumberPM: React.FC = () => {
     return (
@@ -10,8 +11,12 @@ const NumberPM: React.FC = () => {
          </div>
 
          <div className='ion-text-center'>
-             <p className='quiz'>1.มีรูปภาพเต่าทั้งหมดกี่ตัว</p>
+             <p className='quiz'>1.จงหาผลบวกแล้วเลือกคำตอบที่ถูกต้อง</p>
          </div>
+
+         <div className='ion-text-center'>
+                    <img className='img-quiz' src={pm1} alt="" />       
+                </div>
          
          <div className='ion-text-center'>
                    

@@ -3,7 +3,7 @@ import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 import Menu from './pages/Menu'; 
-import Video from './pages/Video';
+import Video from './pages/video';
 import Exercise from './pages/Exercise';
 import Exercisetwo from './pages/Exercisetwo';
 import Game from './pages/Game';
